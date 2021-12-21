@@ -32,6 +32,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'tpope/vim-fugitive'
 call plug#end()
 
+
+filetype plugin on
 "Load in 'modules'
 source $HOME/.config/nvim/coc_configuration.vim
 
@@ -73,24 +75,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_generate_tags = 1
-
-"AUTOCOMPLETE:
-" ------------------------------------------------------------------
-augroup ncm2
-  au!
-  autocmd BufEnter * call ncm2#enable_for_buffer()
-  set completeopt=noinsert,menuone,noselect
-  au User Ncm2PopupOpen set completeopt=noinsert,menuone,noselect
-  au User Ncm2PopupClose set completeopt=menuone
-augroup END
-"Press Enter to select item in autocomplete popup
-inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\<CR>", 'n') : "\<CR>")
-"Cycle through completion entries with tab/shift+tab
-inoremap <expr> <TAB> pumvisible() ? "\<c-n>" : "\<TAB>"
-inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<TAB>"
-"Allow getting out of pop with Down/Up arrow keys
-inoremap <expr> <down> pumvisible() ? "\<C-E>" : "\<down>"
-inoremap <expr> <up> pumvisible() ? "\<C-E>" : "\<up>"
 
 "SNIPPETS:
 " ------------------------------------------------------------------
@@ -207,9 +191,6 @@ set cursorline
 "
 map svs :vsplit<CR>
 
-"CUSTOM FILE FORMATTING:
-"
-autocmd Filetype sh setlocal tabstop=2 
 
 "WORKING WITH BUFFERS:
 "Some useful settings for working with copying/pasting/deleting
