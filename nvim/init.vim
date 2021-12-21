@@ -74,24 +74,6 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_generate_tags = 1
 
-"AUTOCOMPLETE:
-" ------------------------------------------------------------------
-augroup ncm2
-  au!
-  autocmd BufEnter * call ncm2#enable_for_buffer()
-  set completeopt=noinsert,menuone,noselect
-  au User Ncm2PopupOpen set completeopt=noinsert,menuone,noselect
-  au User Ncm2PopupClose set completeopt=menuone
-augroup END
-"Press Enter to select item in autocomplete popup
-inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\<CR>", 'n') : "\<CR>")
-"Cycle through completion entries with tab/shift+tab
-inoremap <expr> <TAB> pumvisible() ? "\<c-n>" : "\<TAB>"
-inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<TAB>"
-"Allow getting out of pop with Down/Up arrow keys
-inoremap <expr> <down> pumvisible() ? "\<C-E>" : "\<down>"
-inoremap <expr> <up> pumvisible() ? "\<C-E>" : "\<up>"
-
 "SNIPPETS:
 " ------------------------------------------------------------------
 "Change default expand since TAB is used to cycle options
@@ -206,6 +188,12 @@ set cursorline
 "CUSTOM SHORTCUTS:
 "
 map svs :vsplit<CR>
+" Can be typed even faster than jj, and if you are already in
+"    normal mode, you (usually) don't accidentally move:
+:imap jk <Esc>
+:imap kj <Esc>
+
+nnoremap <silent> <Leader><Leader> :source $MYVIMRC<cr>
 
 "CUSTOM FILE FORMATTING:
 "
