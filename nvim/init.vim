@@ -32,6 +32,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'tpope/vim-fugitive'
 call plug#end()
 
+
+filetype plugin on
 "Load in 'modules'
 source $HOME/.config/nvim/coc_configuration.vim
 
@@ -195,9 +197,6 @@ map svs :vsplit<CR>
 
 nnoremap <silent> <Leader><Leader> :source $MYVIMRC<cr>
 
-"CUSTOM FILE FORMATTING:
-"
-autocmd Filetype sh setlocal tabstop=2 
 
 "WORKING WITH BUFFERS:
 "Some useful settings for working with copying/pasting/deleting
