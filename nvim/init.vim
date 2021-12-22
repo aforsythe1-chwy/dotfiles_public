@@ -107,14 +107,6 @@ let g:NERDTreeDirArrowCollapsible = "\u00a0"
 let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
 highlight! link NERDTreeFlags NERDTreeDir
 
-"SHORTCUTS:
-" ------------------------------------------------------------------
-"Open file at same line last closed
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-  \| exe "normal! g'\"" | endif
-endif
-
 "SOURCING:
 " ------------------------------------------------------------------
 "Automatically reloads neovim configuration file on write (w)
@@ -188,6 +180,14 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 set cursorline
 
 "CUSTOM SHORTCUTS:
+" ------------------------------------------------------------------
+"Open file at same line last closed
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+  \| exe "normal! g'\"" | endif
+endif
+
+nnoremap <silent> <Leader>f :Rg<CR>
 "
 map svs :vsplit<CR>
 " Can be typed even faster than jj, and if you are already in
