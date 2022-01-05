@@ -37,14 +37,14 @@ filetype plugin on
 "Load in 'modules'
 source $HOME/.config/nvim/coc_configuration.vim
 
-"COLORS:
+"COLORS & SYNTAX:
 " ------------------------------------------------------------------
 if (has("termguicolors"))
  set termguicolors
 endif
 syntax enable
 colorscheme dracula
-
+set foldmethod=syntax
 "NUMBERING:
 " ------------------------------------------------------------------
 " turn hybrid line numbers on
@@ -91,7 +91,7 @@ map <C-p> :FZF<CR>
 "FILE BROWSER:
 " ------------------------------------------------------------------
 "allows NERDTree to open/close by typing 'n' then 't'
-map nt :NERDTreeTabsToggle<CR>
+map <Leader> nt :NERDTreeTabsToggle<CR>
 "Start NERDtree when dir is selected (e.g. "vim .") and start NERDTreeTabs
 let g:nerdtree_tabs_open_on_console_startup=2
 "Add a close button in the upper right for tabs
@@ -111,6 +111,19 @@ highlight! link NERDTreeFlags NERDTreeDir
 " ------------------------------------------------------------------
 "Automatically reloads neovim configuration file on write (w)
 autocmd! bufwritepost init.vim source %
+
+"CUSTOM FUNCTIONS:
+
+" Going to come back to this sourcing problem later. May just have to write is
+" as a one liner mapped to something
+" delfunction "*SourceVim"
+" function! SourceVim()
+" 	echo "Sourcing vim right now and maybe later!! -> " . $MYVIMRC
+" 	source $MYVIMRC
+" 	
+" endfunction
+
+
 
 "NAVIGATION:
 "
@@ -137,8 +150,9 @@ tnoremap <A-l> <C-\><C-n><C-w>l
 nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
+:nnoremap <A-l> <C-w>l
 
+"smart indent when entering insert mode with i on empty lines
 
 "MOUSE:
 " ------------------------------------------------------------------
@@ -181,6 +195,13 @@ set cursorline
 
 "CUSTOM SHORTCUTS:
 " ------------------------------------------------------------------
+let mapleader=","
+" set timeout timeoutlen=3000
+" Commentary configuration
+" noremap <leader>/ :Commentary<cr>
+
+let g:go_rename_command = 'gopls'
+
 "Open file at same line last closed
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -190,12 +211,18 @@ endif
 nnoremap <silent> <Leader>f :Rg<CR>
 "
 map svs :vsplit<CR>
+
+" The following is required so that the 'k' and 'j' keys don't
+" mess things up when in insert mode
+:autocmd InsertEnter * set timeoutlen=50
+:autocmd InsertLeave * set timeoutlen=1000
+
 " Can be typed even faster than jj, and if you are already in
-"    normal mode, you (usually) don't accidentally move:
+" normal mode, you (usually) don't accidentally move:
 :imap jk <Esc>
 :imap kj <Esc>
 
-nnoremap <silent> <Leader><Leader> :source $MYVIMRC<cr>
+nnoremap <silent> <Leader><Leader> :call SourceVim()<cr>
 
 
 "WORKING WITH BUFFERS:
@@ -217,13 +244,10 @@ nnoremap <silent> <C-g> :NERDTreeToggle<CR>
 
 
 nnoremap <C-p> :FZF<CR>
+nnoremap <C-b> :Buffers<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit'
   \}
 
-let mapleader=","
-:set timeout timeoutlen=3000
-" Commentary configuration
-noremap <leader>/ :Commentary<cr>
