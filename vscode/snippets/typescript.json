@@ -1,0 +1,9 @@
+{
+	"dateVanilla": {
+		"prefix": "dateVanilla",
+		"body": [
+			"DateHelper.constructVanillaDate(2020, $2, $3),$0"
+		],
+		"description": "Adds a vanilla date"
+	}
+}

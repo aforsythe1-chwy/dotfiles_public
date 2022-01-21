@@ -1,0 +1,55 @@
+{
+	"HTML Framework": {
+		"prefix": "html",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html>",
+			"<head>",
+			"    <title></title>",
+			"</head>",
+			"<body>",
+			"\t$1",
+			"</body>",
+			"</html>",
+			""
+		],
+		"description": "Lays out the full HTML framework"
+	},
+	"Bulma Form Text Area": {
+		"prefix": "bultextarea",
+		"body": [
+			"<div class=\"field\">",
+			"\t<label class=\"label\" for=\"$1\">$2</label>",
+			"",
+			"\t<div class=\"control\">",
+			"\t\t<textarea name=\"$1\" class=\"textarea\"></textarea>",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "Inserts a bulma text area for a form"
+	},
+	"Bulma Form Text Field": {
+		"prefix": "bultextfield",
+		"body": [
+			"<div class=\"field\">",
+			"\t<label class=\"label\" for=\"$1\">$2</label>",
+			"",
+			"\t<div class=\"control\">",
+			"\t\t<input type=\"text\" class=\"input\" name=\"$1\" placeholder=\"$3\">",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "Inserts a Bulma text field"
+	},
+	"Bulma Form Submit Button": {
+		"prefix": "bulsubmitbutton",
+		"body": [
+			"<div class=\"field\">",
+			"\t<div class=\"control\">",
+			"\t\t<button type=\"submit\" class=\"button is-link\">${1:Submit}</button>",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "Inserts a bulma form submission button"
+	}
+}

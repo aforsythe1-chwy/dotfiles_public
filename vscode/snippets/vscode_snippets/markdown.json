@@ -1,0 +1,9 @@
+{
+	"Insert Image": {
+		"prefix": "img",
+		"body": [
+			"![$1](${2:images}/$3)"
+		],
+		"description": "Insert an image"
+	}
+}
