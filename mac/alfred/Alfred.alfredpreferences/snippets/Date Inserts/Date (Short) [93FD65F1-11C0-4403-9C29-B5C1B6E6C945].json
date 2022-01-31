@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{date:full}",
+    "uid" : "93FD65F1-11C0-4403-9C29-B5C1B6E6C945",
+    "name" : "Date (Short)",
+    "keyword" : "$date"
+  }
+}

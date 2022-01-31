@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{date:yyyy-MM-dd'T'HH:mm:ss}",
+    "uid" : "9BBF3C45-D114-4F67-8986-9042936F6F7A",
+    "name" : "ISO Timestamp",
+    "keyword" : "-iso-"
+  }
+}

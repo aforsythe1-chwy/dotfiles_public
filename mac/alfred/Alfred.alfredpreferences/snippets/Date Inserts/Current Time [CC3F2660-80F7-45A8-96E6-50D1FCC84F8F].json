@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{datetime:medium}",
+    "uid" : "CC3F2660-80F7-45A8-96E6-50D1FCC84F8F",
+    "name" : "Current Time",
+    "keyword" : ":-currdatelong:"
+  }
+}
