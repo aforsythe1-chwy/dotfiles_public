@@ -62,5 +62,8 @@
     ],
     "redhat.telemetry.enabled": true,
     "rewrap.autoWrap.enabled": true,
-    "rewrap.wrappingColumn": 85
+    "rewrap.wrappingColumn": 85,
+    "[json]": {
+        "editor.tabSize": 2
+    }
 }
