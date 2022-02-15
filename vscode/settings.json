@@ -65,5 +65,7 @@
     "rewrap.wrappingColumn": 85,
     "[json]": {
         "editor.tabSize": 2
-    }
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "cSpell.ignoreWords": ["Autoship", "localstack", "Jenkinsfile", "commitlint"],
 }
