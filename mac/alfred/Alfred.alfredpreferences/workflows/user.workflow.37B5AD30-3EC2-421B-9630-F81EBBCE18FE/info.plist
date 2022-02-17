@@ -32,6 +32,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>53845B5E-4C1E-45DB-AAD5-FFEAFC0F433C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ABC9AE06-5A6B-4C42-819F-BB39974FBCAE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>71102960-92B1-429D-8853-1D7E675F3B63</key>
 		<array>
 			<dict>
@@ -58,6 +71,11 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7F922D50-C66B-43B7-9144-DB1C80AD5594</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BB2CF96-9D57-42CC-9CD5-2C3AA040FE84</string>
 		<key>9B7F0DC1-A3B4-4B6E-A7D6-46DA80F8DF96</key>
 		<array>
 			<dict>
@@ -386,6 +404,54 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
+				<integer>1</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>S</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>7F922D50-C66B-43B7-9144-DB1C80AD5594</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Volumes/Data/Applications/Slack.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>7BB2CF96-9D57-42CC-9CD5-2C3AA040FE84</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
 				<integer>31</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
@@ -401,7 +467,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>A46F7D2E-8480-40B6-8618-426A16FA91A8</string>
+			<string>53845B5E-4C1E-45DB-AAD5-FFEAFC0F433C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -418,7 +484,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>E762A54E-8B48-4876-940D-E0319A94D063</string>
+			<string>ABC9AE06-5A6B-4C42-819F-BB39974FBCAE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -606,6 +672,13 @@
 			<key>ypos</key>
 			<integer>145</integer>
 		</dict>
+		<key>53845B5E-4C1E-45DB-AAD5-FFEAFC0F433C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>925</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
 		<key>71102960-92B1-429D-8853-1D7E675F3B63</key>
 		<dict>
 			<key>xpos</key>
@@ -613,12 +686,26 @@
 			<key>ypos</key>
 			<integer>620</integer>
 		</dict>
+		<key>7BB2CF96-9D57-42CC-9CD5-2C3AA040FE84</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1255</integer>
+			<key>ypos</key>
+			<integer>455</integer>
+		</dict>
 		<key>7F160AD7-EC14-4354-B479-1E7759CA4590</key>
 		<dict>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
 			<integer>790</integer>
+		</dict>
+		<key>7F922D50-C66B-43B7-9144-DB1C80AD5594</key>
+		<dict>
+			<key>xpos</key>
+			<integer>925</integer>
+			<key>ypos</key>
+			<integer>455</integer>
 		</dict>
 		<key>8C066FE0-BD29-4788-8BA1-8A4957EE1705</key>
 		<dict>
@@ -661,6 +748,13 @@
 			<integer>280</integer>
 			<key>ypos</key>
 			<integer>455</integer>
+		</dict>
+		<key>ABC9AE06-5A6B-4C42-819F-BB39974FBCAE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1255</integer>
+			<key>ypos</key>
+			<integer>610</integer>
 		</dict>
 		<key>C7096F10-2296-43FC-AD91-B9A285E547C2</key>
 		<dict>
