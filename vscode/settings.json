@@ -67,5 +67,12 @@
         "editor.tabSize": 2
     },
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "cSpell.ignoreWords": ["Autoship", "localstack", "Jenkinsfile", "commitlint"],
+    "cSpell.ignoreWords": [
+        "Autoship",
+        "localstack",
+        "Jenkinsfile",
+        "commitlint"
+    ],
+    "go.toolsManagement.autoUpdate": true,
+    "editor.maxTokenizationLineLength": 2000000,
 }
