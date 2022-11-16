@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{random:100000..999999}",
+    "uid" : "09F2B41E-CA7F-4121-9BF0-7345FD08D858",
+    "name" : "Random SKU",
+    "keyword" : "$##"
+  }
+}
