@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "lastSuccessfulBuild",
+    "uid" : "ACEE4742-D180-49E9-A4BF-8BB33A72310C",
+    "name" : "Last Build",
+    "keyword" : "$lb"
+  }
+}
