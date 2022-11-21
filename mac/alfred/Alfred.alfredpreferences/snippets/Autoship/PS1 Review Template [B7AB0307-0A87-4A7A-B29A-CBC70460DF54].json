@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "I think that <CANDIDATE_NAME> would <DECISION (not)> be a good fit at Chewy as an <SE1\/SE2>\n\nPros:\n\nCons:\n\nObject Oriented Principles:\n\nData Structures:\n\nCoding:",
+    "uid" : "B7AB0307-0A87-4A7A-B29A-CBC70460DF54",
+    "name" : "PS1 Review Template",
+    "keyword" : "$ps1"
+  }
+}
