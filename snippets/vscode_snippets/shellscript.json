@@ -1,0 +1,94 @@
+{
+	"If Argument Count Not Equal": {
+		"prefix": "ifargsnot",
+		"body": [
+			"if [[ \"$#\" -ne $1 ]]; then",
+			"\techo \"Illegal number of arguments\"",
+			"\treturn",
+			"fi",
+			""
+		],
+		"description": "Checks for if arguments are equal to a number"
+	},
+	"If Arg Count Equal To": {
+		"prefix": "ifargs",
+		"body": [
+			"if [[ \"$#\" -ne $1 ]]; then",
+			"\techo \"You need to give me a file to search for!\"",
+			"\treturn",
+			"fi",
+			""
+		],
+		"description": "If the args are equal to a certain count"
+	},
+	"bashdocumentation": {
+		"prefix": "docbash",
+		"body": [
+			"#",
+			"#\tAuthor:",
+			"#\t\tAnthony Forsythe",
+			"#",
+			"#\tDate Created:",
+			"#\t\t$CURRENT_MONTH-$CURRENT_DATE-$CURRENT_YEAR",
+			"#",
+			"#\tPurpose:",
+			"#\t\t$1",
+			"#",
+			"#\tParameters:",
+			"#\t\t\\$1:\t$2",
+			"#",
+			"#\tExample:",
+			"#\t\t$3",
+			"#"
+		],
+		"description": "Adds documentation to a bash function"
+	},
+	"shebang": {
+		"prefix": "shebang",
+		"body": [
+			"#!/bin/bash",
+			"",
+			"$0"
+		],
+		"description": "Adds the Bash shebang"
+	},
+	"undefined": {
+		"body": [
+			"if [ -n \"$variable\" ]; then",
+			"    echo \"Env var \\$$variable must be defined!\"",
+			"else",
+			"    source $variable",
+			"fi"
+		]
+	},
+	"Source Env Var if Available": {
+		"prefix": "sourceifavailable",
+		"body": [
+			"if [ -n \"$$1\" ]; then",
+			"    source \"$$1\"",
+			"else",
+			"    echo \"\\$$1 must be defined\"",
+			"fi"
+		],
+		"description": "Sources a file at the env var path if it is defined"
+	},
+	"Check if Env Var Available": {
+		"prefix": "checkifavailable",
+		"body": [
+			"if [ -z \"$$1\" ]; then",
+			"    echo \"$$1 must be defined!\"",
+			"fi"
+		],
+		"description": "Check if env var is available"
+	},
+	"Env var comment": {
+		"prefix": "envcomment",
+		"body": [
+			"#   Description:",
+			"#       $1",
+			"#   Ex:",
+			"#       $2"
+		],
+		"description": "Inserts a comment for an environment variable"
+	}
+}

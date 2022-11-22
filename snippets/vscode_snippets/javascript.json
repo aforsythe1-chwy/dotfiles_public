@@ -1,0 +1,49 @@
+{
+	"Add Function Documentation": {
+		"prefix": "documentation",
+		"body": [
+			"/* ${1:functionName} function documentation",
+			"\tAuthor:",
+			"\t\tAnthony Forsythe",
+			"",
+			"\tCreation Date:",
+			"\t\t$CURRENT_MONTH-$CURRENT_DATE-$CURRENT_YEAR",
+			"",
+			"\tPurpose:",
+			"\t\t${2:purposeBody}",
+			"",
+			"\tArguments:",
+			"\t\t${3:firstParameter}",
+			"\tSample:",
+			"\t\t${3:sample}",
+			"*/"
+		],
+		"description": "Log output to console"
+	},
+	"Class Creator": {
+		"prefix": "classcreate",
+		"body": [
+			"/**",
+			" * $1 Class",
+			" *",
+			" * @constructor",
+			" */",
+			"function $1() {",
+			"}",
+			"",
+			"$1.prototype.$2 = function () {",
+			"\t\t$3",
+			"};",
+		],
+		"description": "Will create a class."
+	},
+	"Prototype Creator": {
+		"prefix": "prototypeBuilder",
+		"body": [
+			"$1.prototype.$2 = function() {",
+			"\t\t$3",
+			"}"
+		],
+		"description": "Will create the prototype for an ES5 style class."
+	}
+}

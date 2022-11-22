@@ -1,0 +1,154 @@
+{
+	"Add __init__": {
+		"prefix": "init",
+		"body": [
+			"def __init__(self):",
+			"\tself.${1:property}"
+		],
+		"description": "Creates init function"
+	},
+	"Class property": {
+		"prefix": "classProp",
+		"body": [
+			"self.${1:propName} = ${2:propValue}"
+		],
+		"description": "Add a class property"
+	},
+	"globalize": {
+		"prefix": "global",
+		"body": [
+			"global $1"
+		],
+		"description": "Make global"
+	},
+	"Python Shebang": {
+		"prefix": "shebang",
+		"body": [
+			"#!/usr/bin/env python3"
+		],
+		"description": "Adds the python 3 shebang"
+	},
+	"Bootstrap logging": {
+		"prefix": "addLogging",
+		"body": [
+			"import logging as log",
+			"",
+			"def setup_logging():",
+			"    logging_format = \"%(asctime)s: %(message)s\"",
+			"    log.basicConfig(",
+			"        format=logging_format,",
+			"        level=log.DEBUG,",
+			"        datefmt=\"%H:%M:%S\"",
+			"    )",
+			""
+		],
+		"description": "Adds a little logging snippet to speed up the process"
+	},
+	"SetupArgumentParsing": {
+		"prefix": "addArgumentParsing",
+		"body": [
+			"import argparse",
+			"",
+			"def setup_argument_parsing():",
+			"    parser = argparse.ArgumentParser(",
+			"        description='A sample description of the application'",
+			"    )",
+			"",
+			"    pass"
+		],
+		"description": "Bootstraps argument parsing"
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+			"def main():",
+			"    pass",
+			"",
+			"if __name__ == \"__main__\":",
+			"    main()"
+		],
+		"description": "Inserts some main things"
+	},
+	"bootstrap_application": {
+		"prefix": "bootstrap",
+		"body": [
+			"#!/usr/bin/env python3",
+			"",
+			"import argparse",
+			"import logging as log",
+			"",
+			"def setup():",
+			"    setup_logging()",
+			"    setup_argument_parsing()",
+			"",
+			"def setup_logging():",
+			"    logging_format = \"%(asctime)s: %(message)s\"",
+			"    log.basicConfig(",
+			"        format=logging_format,",
+			"        level=log.DEBUG,",
+			"        datefmt=\"%H:%M:%S\"",
+			"    )",
+			"",
+			"def setup_argument_parsing():",
+			"    parser = argparse.ArgumentParser(",
+			"        description='A sample description of the application'",
+			"    )",
+			"",
+			"    pass",
+			"",
+			"def main():",
+			"    setup()",
+			"",
+			"if __name__ == \"__main__\":",
+			"    main()"
+		],
+		"description": "Creates a basic application with logging and argument parsing"
+	},
+	"Section Header": {
+		"prefix": "sectionheader",
+		"body": [
+			"\"\"\"",
+			"    § $0",
+			"\"\"\""
+		],
+		"description": "Puts a section header in"
+	},
+	"Testcase Boostrap": {
+		"prefix": "bootstraptest",
+		"body": [
+			"from collections import namedtuple",
+			"from typing import List, Dict, Set",
+			"",
+			"TestCase = namedtuple('TestCase', ['property'])",
+			"",
+			"def buildTestCases() -> List[TestCase]:",
+			"\treturn [",
+			"\t\tTestCase(",
+			"\t\t\tproperty='test'",
+			"\t\t)",
+			"\t]",
+			"",
+			"def newline_print(*args):",
+			"\tprint('\\n'.join(map(lambda x:  str(x), args)))",
+			"",
+			"def print_result(result: bool):",
+			"    print('SUCCESS' if result else 'FAILURE')",
+			"",
+			"def question():",
+			"    pass",
+			"",
+			"def main():",
+			"\ttestCases = buildTestCases()",
+			"\t",
+			"\tfor t in testCases:",
+			"\t\tresult = print_result()",
+			"",
+			"        print_result(result)",
+			"\t",
+			"if __name__ == \"__main__\":",
+			"    main()",
+			""
+		],
+		"description": "Creates a base for hackerrank and leetcode style questions"
+	}
+}
