@@ -54,5 +54,6 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
+-- install without yarn or npm
 reload("user.lsp")
 reload("user.telescope")
