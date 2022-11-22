@@ -18,6 +18,8 @@ lvim.colorscheme = "lunar"
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["gs"] = "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>"
+
 lvim.keys.insert_mode["jk"] = "<ESC>"
 lvim.keys.insert_mode["kj"] = "<ESC>"
 
@@ -52,5 +54,5 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
-require("luasnip/loaders/from_vscode").load { paths = { "~/.config/lvim/snippets/my-snippets" } }
 reload("user.lsp")
+reload("user.telescope")
