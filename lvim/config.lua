@@ -58,3 +58,5 @@ lvim.builtin.treesitter.highlight.enable = true
 reload("user.plugins")
 reload("user.lsp")
 reload("user.telescope")
+reload("user.whichkey")
+
