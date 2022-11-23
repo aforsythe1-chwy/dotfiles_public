@@ -1,3 +1,3 @@
 # Considering this is a compiled file I don't think we want to
 # commit it
-./plugin/packer_compiled.lua
+plugin/packer_compiled.lua
