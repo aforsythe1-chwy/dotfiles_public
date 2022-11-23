@@ -25,7 +25,7 @@ lvim.keys.insert_mode["kj"] = "<ESC>"
 
 vim.opt.relativenumber = true
 
-
+vim.g.python3_host_prog = "/usr/local/bin/python3"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -55,5 +55,6 @@ lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
 
 -- install without yarn or npm
+reload("user.plugins")
 reload("user.lsp")
 reload("user.telescope")
