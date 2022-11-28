@@ -6,6 +6,19 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
+		<key>306EB45E-5C71-4574-BE53-F88BF289F7C9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>157BA7B2-808D-4D5A-B6B1-1517A4E6B19A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>36F4CA8B-2E95-45FF-B664-2A6D97C5F600</key>
 		<array>
 			<dict>
@@ -50,6 +63,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>136A2C2E-404A-4CBB-95F2-D0ADA3ABE8F8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8F4FE25D-7807-43D9-A251-7DF0621A32C4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AEDB80C4-0251-4E87-AE3A-A3D49C0E7DDB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -137,6 +163,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Volumes/Data/Applications/Visual Studio Code.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>CD127619-BA72-4E1A-B840-65E0553E96EA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -164,23 +207,6 @@
 			<string>4E3A4525-F3EF-441D-B118-40BC5347FD13</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/System/Volumes/Data/Applications/Notion.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>DFB7ED1C-21FF-426D-BF1C-8C69FA5543EF</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -216,23 +242,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/System/Volumes/Data/Applications/Visual Studio Code.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>CD127619-BA72-4E1A-B840-65E0553E96EA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -242,11 +251,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>2</integer>
+				<integer>6</integer>
 				<key>hotmod</key>
 				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>D</string>
+				<string>Z</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -257,7 +266,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>36F4CA8B-2E95-45FF-B664-2A6D97C5F600</string>
+			<string>306EB45E-5C71-4574-BE53-F88BF289F7C9</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -266,7 +275,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/System/Applications/Messages.app</string>
+					<string>/System/Volumes/Data/Applications/Notion.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -274,7 +283,24 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>8C066FE0-BD29-4788-8BA1-8A4957EE1705</string>
+			<string>DFB7ED1C-21FF-426D-BF1C-8C69FA5543EF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/zoom.us.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>157BA7B2-808D-4D5A-B6B1-1517A4E6B19A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -314,6 +340,23 @@
 			<dict>
 				<key>paths</key>
 				<array>
+					<string>/System/Applications/Messages.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>8C066FE0-BD29-4788-8BA1-8A4957EE1705</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
 					<string>/Applications/Dash.app</string>
 				</array>
 				<key>toggle</key>
@@ -329,19 +372,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/System/Volumes/Data/Applications/Google Chrome.app</string>
-				</array>
-				<key>toggle</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>A19104E4-6308-42A7-92AF-CB6230419145</string>
+			<string>36F4CA8B-2E95-45FF-B664-2A6D97C5F600</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -373,6 +430,23 @@
 			<string>AB0320CD-60DC-4BC8-ABBC-2A531926A2FA</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Volumes/Data/Applications/Google Chrome.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>A19104E4-6308-42A7-92AF-CB6230419145</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -419,23 +493,6 @@
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
 			<string>E762A54E-8B48-4876-940D-E0319A94D063</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/System/Volumes/Data/Applications/kitty.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>A8EEC7D0-D6C0-471F-90B0-D47BD33EEAE9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -521,6 +578,71 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Volumes/Data/Applications/kitty.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>A8EEC7D0-D6C0-471F-90B0-D47BD33EEAE9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>35</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>P</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8F4FE25D-7807-43D9-A251-7DF0621A32C4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Spotify.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>AEDB80C4-0251-4E87-AE3A-A3D49C0E7DDB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -578,12 +700,26 @@
 			<key>ypos</key>
 			<integer>790</integer>
 		</dict>
+		<key>157BA7B2-808D-4D5A-B6B1-1517A4E6B19A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1905</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
 		<key>250EA865-C757-4DF5-96DA-23EA06998508</key>
 		<dict>
 			<key>xpos</key>
 			<integer>610</integer>
 			<key>ypos</key>
 			<integer>300</integer>
+		</dict>
+		<key>306EB45E-5C71-4574-BE53-F88BF289F7C9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1570</integer>
+			<key>ypos</key>
+			<integer>145</integer>
 		</dict>
 		<key>36F4CA8B-2E95-45FF-B664-2A6D97C5F600</key>
 		<dict>
@@ -597,7 +733,7 @@
 			<key>xpos</key>
 			<integer>1255</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>620</integer>
 		</dict>
 		<key>4E3A4525-F3EF-441D-B118-40BC5347FD13</key>
 		<dict>
@@ -627,12 +763,19 @@
 			<key>ypos</key>
 			<integer>300</integer>
 		</dict>
+		<key>8F4FE25D-7807-43D9-A251-7DF0621A32C4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>920</integer>
+			<key>ypos</key>
+			<integer>775</integer>
+		</dict>
 		<key>9B7F0DC1-A3B4-4B6E-A7D6-46DA80F8DF96</key>
 		<dict>
 			<key>xpos</key>
-			<integer>925</integer>
+			<integer>920</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>620</integer>
 		</dict>
 		<key>A19104E4-6308-42A7-92AF-CB6230419145</key>
 		<dict>
@@ -661,6 +804,13 @@
 			<integer>280</integer>
 			<key>ypos</key>
 			<integer>455</integer>
+		</dict>
+		<key>AEDB80C4-0251-4E87-AE3A-A3D49C0E7DDB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1255</integer>
+			<key>ypos</key>
+			<integer>775</integer>
 		</dict>
 		<key>C7096F10-2296-43FC-AD91-B9A285E547C2</key>
 		<dict>
