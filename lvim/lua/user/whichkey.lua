@@ -29,7 +29,7 @@ lvim.builtin.which_key.mappings["b"] = {
 
 lvim.builtin.which_key.mappings["f"] = {
   name = "Find",
-  b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+  b = { "<cmd>Telescope git_branches<>", "Checkout branch" },
   c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
   f = { "<cmd>Telescope find_files<cr>", "Find files" },
   t = { "<cmd>Telescope live_grep<cr>", "Find Text" },
@@ -43,5 +43,10 @@ lvim.builtin.which_key.mappings["f"] = {
   R = { "<cmd>Telescope registers<cr>", "Registers" },
   k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
   C = { "<cmd>Telescope commands<cr>", "Commands" },
+}
+
+lvim.builtin.which_key.mappings["t"] = {
+  name = "Test (Jest)",
+  r = { "<cmd>:lua require\"jester\".run()<cr>", "Run test under cursor" }
 }
 
