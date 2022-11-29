@@ -59,4 +59,5 @@ reload("user.plugins")
 reload("user.lsp")
 reload("user.telescope")
 reload("user.whichkey")
+reload("user.custom")
 
